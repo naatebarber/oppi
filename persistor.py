@@ -28,5 +28,5 @@ def test():
 
 
 scheduler = BlockingScheduler()
-scheduler.add_job(poll_and_persist, "interval", seconds=5)
+scheduler.add_job(poll_and_persist, "interval", hours=1)
 scheduler.start()
