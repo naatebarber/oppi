@@ -10,7 +10,6 @@ def poll_and_persist():
 
     db = Datastore().setup()
     data = poll()
-    print(data)
 
     data_blob = json.dumps(data)
     db.persist(data_blob)
